@@ -17,10 +17,15 @@
  ##Features
 
 ✔ Custom YOLOv8 detection model (trained on your dataset)
+
 ✔ DeepSORT tracker upgraded for TensorFlow 2.x
+
 ✔ MARS appearance model (mars-small128.pb) integration
+
 ✔ Supports video input, image input, and webcam
+
 ✔ Saves an annotated output video with unique track IDs
+
 ✔ Fully reproducible pipeline — dataset → training → tracking
 
 📂 Repository Structure
@@ -47,3 +52,42 @@ Images were captured in various environments to improve real-world robustness.
 -Generated dataset.yaml for YOLOv8
 
 Dataset -> https://drive.google.com/drive/folders/1f98Opw2vio1RhRVv7_a1CLyEHTJnzZ2Y?usp=sharing
+
+## System Architecture
+
+<img width="402" height="481" alt="image" src="https://github.com/user-attachments/assets/c1e21bcd-4b93-4078-a61d-3a175fca79c6" />
+
+## How to Use
+1. Run the Notebook (Recommended)
+
+### Open Detection.ipynb:
+
+#### It includes:
+
+Dataset preprocessing
+
+YOLO training
+
+YOLO inference
+
+DeepSORT tracking
+
+Output video generation
+
+### Train YOLOv8 on Your Dataset
+
+### Run YOLO Inference (Detection Only)
+
+### Run Object Tracking (YOLO + DeepSORT)
+
+###The output video will contain:
+
+-Bounding boxes
+
+-Class labels
+
+-Persistent object IDs
+
+-Tracking lines
+
+
