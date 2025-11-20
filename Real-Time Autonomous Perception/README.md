@@ -1,8 +1,8 @@
 # Real-Time Autonomous Perception for robots
 
-###YOLOv8 + DeepSORT + Custom Color Dataset
+### YOLOv8 + DeepSORT + Custom Color Dataset
 
-###This project implements a real-time object detection and tracking system using:
+### This project implements a real-time object detection and tracking system using:
 
 -YOLOv8 (Ultralytics) for fast, accurate object detection
 
@@ -14,7 +14,7 @@
 
 -This pipeline is designed for robotics, autonomous systems, and real-world perception tasks, where reliable, ID-consistent tracking is essential.
 
- ##Features
+ ## Features
 
 ✔ Custom YOLOv8 detection model (trained on your dataset)
 
@@ -28,16 +28,16 @@
 
 ✔ Fully reproducible pipeline — dataset → training → tracking
 
-📂 Repository Structure
+## Repository Structure
 
 <img width="581" height="194" alt="image" src="https://github.com/user-attachments/assets/db8ddd61-8d16-44ad-8616-a9416d9699c3" />
 
-##Dataset Description
+## Dataset Description
 
 This project uses a self-created dataset of colored objects (Red, Blue, Yellow).
 Images were captured in various environments to improve real-world robustness.
 
-##Dataset Preparation Steps
+## Dataset Preparation Steps
 
 -Collected ~80 images containing colored samples
 
@@ -80,7 +80,7 @@ Output video generation
 
 ### Run Object Tracking (YOLO + DeepSORT)
 
-###The output video will contain:
+### The output video will contain:
 
 -Bounding boxes
 
