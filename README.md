@@ -4,13 +4,13 @@ Built a real-time perception pipeline combining YOLOv8 for object detection and 
 
 ##Procedure
 
-###Custom Dataset Creation & Annotation:
+### Custom Dataset Creation & Annotation:
 Collected 80+ images across varied lighting/backgrounds, annotated using CVAT, and built a complete preprocessing pipeline (XML → YOLO format) with automated train/val splits and dataset YAML generation.
 
-###Model Training & Optimization:
+### Model Training & Optimization:
 Trained a custom YOLOv8 model using Ultralytics, achieving robust color-object detection with high mAP scores. Implemented early-stopping, evaluation curves, and confusion-matrix analysis to validate performance.
 
-###DeepSORT Modernization (TensorFlow 2.x):
+### DeepSORT Modernization (TensorFlow 2.x):
 Refactored multiple outdated modules (linear assignment, session-based execution, SciPy API changes) to ensure compatibility with TF 2.x. Fixed:
 
 -sklearn.utils.linear_assignment_ removal
@@ -20,10 +20,10 @@ Refactored multiple outdated modules (linear assignment, session-based execution
 -Deprecated tf.Session() issues by enabling TF1-compat mode
 Result: a fully functional, updated DeepSORT pipeline.
 
-###Appearance Embedding Integration:
+### Appearance Embedding Integration:
 Integrated the MARS appearance encoder for generating robust feature embeddings, enabling identity-preserving tracking during occlusion, motion, and re-entry events.
 
-###Real-Time Video Tracking Pipeline:
+### Real-Time Video Tracking Pipeline:
 
 Engineered an end-to-end inference system that:
 
@@ -37,13 +37,12 @@ Engineered an end-to-end inference system that:
 
 -Assigns stable, unique IDs with per-track visualizations
 
-###Optimized I/O & Visualization:
+### Optimized I/O & Visualization:
 Implemented color-coded bounding boxes, ID overlays, and class-count summaries. Output is written as a fully processed annotated video via OpenCV.
 
-###Technical Stack
+### Technical Stack
 
 YOLOv8, DeepSORT, TensorFlow 2.x, OpenCV, NumPy, SciPy, CVAT, Google Colab, Python
 
-###Outcome
 
 Delivered a real-time, identity-consistent perception system capable of detecting and tracking objects robustly even under occlusion or cluttered scenes—mirroring the perception behavior required in robotics, autonomous navigation, and real-world CV applications.
